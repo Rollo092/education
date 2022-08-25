@@ -54,6 +54,12 @@ def main():
                             ReadyStr = ReadyStr+str(i)
                         else:
                             break
+                    elif len(ReadyStr) > self.Shag:
+                        print('Ошибка. Длина строки больше шага. Выход')
+                        quit()
+
+
+                        
                 if ReadyStr in self.OutList:
                     break
             # print(self.OutList)
