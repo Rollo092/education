@@ -1,6 +1,9 @@
 import sys
 import re
-Link = (sys.argv[1])
+
+from pathlib import Path
+Link = sys.argv[1]
+Link=Path(Link)
 Files = open(Link)
 Massiv = []
 for i in Files:
