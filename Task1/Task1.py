@@ -10,7 +10,6 @@ Outstr=''
 while True:
     for i in Massiv:
         SummaText+=str(i)
-        print(len(SummaText))
         if len(SummaText) == m:
             if SummaText in Iterator and len(Iterator) > 0:
                 break
