@@ -17,7 +17,6 @@ while True:
             Outstr+=SummaText[0]
             SummaText=str(i)
         if len( SummaText) >m:
-            print(len(SummaText))
             break
     if len(SummaText) >= m:break
 print(Outstr)
