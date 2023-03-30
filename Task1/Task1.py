@@ -10,10 +10,15 @@ Outstr=''
 while True:
     for i in Massiv:
         SummaText+=str(i)
+        print(len(SummaText))
         if len(SummaText) == m:
-            if SummaText in Iterator and len(Iterator) > 0: break
+            if SummaText in Iterator and len(Iterator) > 0:
+                break
             Iterator.append(SummaText)
             Outstr+=SummaText[0]
             SummaText=str(i)
-    if len(SummaText) == m:break
+        if len( SummaText) >m:
+            print(len(SummaText))
+            break
+    if len(SummaText) >= m:break
 print(Outstr)
