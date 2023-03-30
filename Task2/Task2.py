@@ -2,16 +2,14 @@ import sys
 import re
 
 from pathlib import Path
-Link = sys.argv[1]
-Link=Path(Link)
+Link=Path(sys.argv[1])
 Files = open(Link)
 Massiv = []
 for i in Files:
-    if re.search(r'\d' ,i) != None:
-        Massiv.append(int(i))
-    else:
-        print('Ошибка в строке. Значение != Цифре')
-        quit()
+    if re.search(r'\d+' ,i) != None:
+        ZnachStr=(re.search(r'\d+' ,i).group())
+        Massiv.append(int(ZnachStr))
+
 count = 0
 SredZnach = 0
 for i in Massiv:
